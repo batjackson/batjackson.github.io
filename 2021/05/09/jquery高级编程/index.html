@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="[TOC] Jquery高级编程第1部分Jquery基础1.1 jquery的优势 最大的优势：消除了很多跨浏览器的兼容性问题 遍历Dom元素方面非常卓越 轻量级 标准版本29kb 开发调试版本212kb 较少代码就可以处理相当复杂的JavaScript代码实现的功能 适用于构建功能丰富的，动态的Ajax web应用程序  1.2硬件和浏览器条件 几乎全部支持  1.3获得jquery库和jqeu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2021/05/09/jquery%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[TOC] Jquery高级编程第1部分Jquery基础1.1 jquery的优势 最大的优势：消除了很多跨浏览器的兼容性问题 遍历Dom元素方面非常卓越 轻量级 标准版本29kb 开发调试版本212kb 较少代码就可以处理相当复杂的JavaScript代码实现的功能 适用于构建功能丰富的，动态的Ajax web应用程序  1.2硬件和浏览器条件 几乎全部支持  1.3获得jquery库和jqeu">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-05-09T02:52:28.118Z">
+<meta property="article:modified_time" content="2021-05-12T04:21:50.228Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-jquery高级编程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/05/09/jquery%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B/" class="article-date">
+  <time class="dt-published" datetime="2021-05-09T02:52:28.118Z" itemprop="datePublished">2021-05-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h1 id="Jquery高级编程"><a href="#Jquery高级编程" class="headerlink" title="Jquery高级编程"></a>Jquery高级编程</h1><h2 id="第1部分Jquery基础"><a href="#第1部分Jquery基础" class="headerlink" title="第1部分Jquery基础"></a>第1部分Jquery基础</h2><h3 id="1-1-jquery的优势"><a href="#1-1-jquery的优势" class="headerlink" title="1.1 jquery的优势"></a>1.1 jquery的优势</h3><ol>
+<li>最大的优势：<strong>消除了很多跨浏览器的兼容性问题</strong></li>
+<li><strong>遍历Dom元素方面非常卓越</strong></li>
+<li><strong>轻量级</strong> 标准版本29kb 开发调试版本212kb</li>
+<li>较少代码就可以处理相当复杂的JavaScript代码实现的功能</li>
+<li>适用于构建功能丰富的，动态的Ajax web应用程序</li>
+</ol>
+<h3 id="1-2硬件和浏览器条件"><a href="#1-2硬件和浏览器条件" class="headerlink" title="1.2硬件和浏览器条件"></a>1.2硬件和浏览器条件</h3><ul>
+<li><strong>几乎全部支持</strong></li>
+</ul>
+<h3 id="1-3获得jquery库和jqeury-UI"><a href="#1-3获得jquery库和jqeury-UI" class="headerlink" title="1.3获得jquery库和jqeury UI"></a>1.3获得jquery库和jqeury UI</h3><h3 id="1-4hello-world-实例"><a href="#1-4hello-world-实例" class="headerlink" title="1.4hello world 实例"></a>1.4hello world 实例</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">jQuery(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  alert(<span class="string">&quot;hello world&quot;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-5JavaScript规范"><a href="#1-5JavaScript规范" class="headerlink" title="1.5JavaScript规范"></a>1.5JavaScript规范</h3><ol>
+<li>除了意图明显要创建一个全局变量外，总是用var声明变量</li>
+<li>总是使用分号。这对压缩代码非常重要</li>
+<li>常量使用大写，每个单词之间用下划线分割</li>
+<li>函数、变量和方法名采用驼峰命名法，并且将整个变量名的第一个字母小写</li>
+<li>类和枚举名也采用驼峰命名法，但整个变量名第一个字母大写</li>
+<li>使代码有间隔 明确使用空格 代码行末尾不使用空格字符</li>
+<li>注释规范</li>
+<li>相等性：总是使用等同（===）进行比较，而不是简单使用等于（==）进行比较。例外：==null，!=null</li>
+<li>以块方式组织代码:(if/else/for/while/try)总是使用花阔号，建议不要使用三元操作符来取代if/else</li>
+<li>函数调用格式：在函数调用参数的两侧包含一个多余的空格 //f(arg );  f( g(arg) );</li>
+<li>数组和对象: 对于空对象和数据字面量不要使用额外的空格 ,但在逗号和冒号后使用一个空格: var a ={}; var b = []; var c = [ 1, 2, 3 ];</li>
+<li>类型检查 详细参考书籍</li>
+<li>RegExp：在.text() 或.exec()中创建正则表达式(RegExp)</li>
+<li>字符串： google JavaScript style guide ：单引号 jquery style guide :双引号</li>
+</ol>
+<h3 id="1-6开发工具"><a href="#1-6开发工具" class="headerlink" title="1.6开发工具"></a>1.6开发工具</h3><h3 id="1-7调试Javascript和jquery"><a href="#1-7调试Javascript和jquery" class="headerlink" title="1.7调试Javascript和jquery"></a>1.7调试Javascript和jquery</h3><h3 id="1-8使用FireQuery插件"><a href="#1-8使用FireQuery插件" class="headerlink" title="1.8使用FireQuery插件"></a>1.8使用FireQuery插件</h3><h3 id="1-9小结"><a href="#1-9小结" class="headerlink" title="1.9小结"></a>1.9小结</h3><p>介绍获取构建运行jquery的多种方法</p>
+<h2 id="第2部分Javascript基础"><a href="#第2部分Javascript基础" class="headerlink" title="第2部分Javascript基础"></a>第2部分Javascript基础</h2><ul>
+<li>先精通js 后精通jq</li>
+<li>js 是 ajax现代web应用程序的驱动力</li>
+<li>js继承了java的名称和命名规范</li>
+<li>js是一种动态类型的，面向对象的脚本语言。</li>
+<li>没有类的概念，使用原型进行继承</li>
+<li>js具有函数式程序设计语言的特效：闭包，将函数座位第一类对象，匿名函数，高阶函数等</li>
+</ul>
+<h3 id="2-1理解数值"><a href="#2-1理解数值" class="headerlink" title="2.1理解数值"></a>2.1理解数值</h3><ol>
+<li><p>js中所有数值都是64位双精度的，取值范围从-5e-324到1.7976931348623157e308</p>
+</li>
+<li><p>js中整数和浮点数没有什么区别，两者都是数值</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="keyword">typeof</span> <span class="number">1</span>;</span><br><span class="line">number</span><br><span class="line">&gt; <span class="keyword">typeof</span> <span class="number">1.5</span></span><br><span class="line">number</span><br></pre></td></tr></table></figure></li>
+<li><p>所有js数值都按照IEEE-754双精度二进制数值标准进行表示。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="number">.1</span> + <span class="number">.2</span></span><br><span class="line"><span class="number">0.300000000000000004</span></span><br></pre></td></tr></table></figure></li>
+<li><p>js没有内置的十进制数据类型，但js为数值提供了两个方法:</p>
+<p>toPrecision 和 toFixed 这两个方法可以按照固定位置的小数格式化数值</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="keyword">var</span> num = <span class="number">1234.12345123</span>;</span><br><span class="line">&gt;num.toFixed(<span class="number">2</span>);</span><br><span class="line"><span class="number">123.12</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> num2 = <span class="number">1234.12345123</span>;</span><br><span class="line">num2.toPrecision(<span class="number">8</span>);</span><br><span class="line"><span class="number">1234.1234</span></span><br></pre></td></tr></table></figure></li>
+<li><p>如果使用一个超过64位范围数值 js 将返回 Infinity 和 - Infinity 除数为0则返回Infinity</p>
+</li>
+<li><p>当试图将一个无效字符串对象转换为一个数值时，结果为NaN</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="number">10</span>*<span class="number">1</span> +<span class="number">100</span> - <span class="number">1</span> - <span class="literal">NaN</span></span><br><span class="line"><span class="literal">NaN</span></span><br><span class="line"></span><br><span class="line">&gt;<span class="keyword">var</span> x = <span class="literal">NaN</span>;</span><br><span class="line">&gt;<span class="built_in">isNaN</span>(x);</span><br><span class="line"><span class="literal">true</span></span><br></pre></td></tr></table></figure></li>
+<li><p>js支持八进制和十六进制  </p>
+<p>八进制字面值使用一个0作为前缀</p>
+<p>十六进制数值则以一个x作为前缀</p>
+</li>
+<li><p>js内置的Math对象常用于常见的数学运算</p>
+</li>
+</ol>
+<h3 id="2-2使用字符串"><a href="#2-2使用字符串" class="headerlink" title="2.2使用字符串"></a>2.2使用字符串</h3><ul>
+<li><p>字符串是一个由0-16位unicode字符组成的系列，使用单引号或者双引号将字符串括起。</p>
+</li>
+<li><p>js中没有为字符定义特殊的数据类型</p>
+</li>
+<li><p>字符串是不可变的对象</p>
+</li>
+<li><p>```javascript</p>
+<blockquote>
+<p>“test string”.index(“s”)<br>5<br>“test string”.charAt(5)<br>s</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 2.3理解布尔类型</span><br><span class="line"></span><br><span class="line">- Boolean类型表示true 和false 值。</span><br><span class="line"></span><br><span class="line">- 空字符串、NaN值、null、undefined、数值0和flase都将被计算为false</span><br><span class="line"></span><br><span class="line">- 其他的解析为true</span><br><span class="line"></span><br><span class="line">  ```JavaScript</span><br><span class="line">  if(&#x27;&#x27;)&#123;</span><br><span class="line">    console.log(&#x27;something happens&#x27;);</span><br><span class="line">  &#125;else&#123;</span><br><span class="line">  console.log(&#x27;nothing happens&#x27;)</span><br><span class="line">  &#125;</span><br><span class="line">  nothing happens</span><br></pre></td></tr></table></figure></li>
+<li><p>逻辑与(&amp;&amp;)或(||)非(!)</p>
+</li>
+<li><p>demo</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">validate</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> name_input = <span class="string">&#x27;Jimmy&#x27;</span>;</span><br><span class="line">  <span class="keyword">var</span> age_input;</span><br><span class="line">  <span class="keyword">return</span> name_input &amp;&amp; age_input;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span>(validate())&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&#x27;pass&#x27;</span>);</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&#x27;fail&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//输出 fail</span></span><br></pre></td></tr></table></figure></li>
+<li><p>NaN值表示一个非数值的值 typeof操作符奇怪行为之一</p>
+</li>
+<li><p>```javascript</p>
+<blockquote>
+<p>typeof NaN<br>number</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 2.4类型之间比较</span><br><span class="line"></span><br><span class="line">- (==)操作符 执行比较前进行强制类型转换</span><br><span class="line"></span><br><span class="line">- </span><br><span class="line"></span><br><span class="line">  ```javascript</span><br><span class="line">  &gt;1 == &quot;1&quot;;</span><br><span class="line">  true</span><br></pre></td></tr></table></figure></li>
+<li><p>(===)如果左操作数和右操作数完全相同才会返回true</p>
+</li>
+<li><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="number">1</span>===<span class="string">&quot;1&quot;</span></span><br><span class="line"><span class="literal">false</span></span><br></pre></td></tr></table></figure></li>
+<li><p>还有 != !==操作符 请总是使用=== 与!==</p>
+</li>
+</ul>
+<h3 id="2-5日期简介"><a href="#2-5日期简介" class="headerlink" title="2.5日期简介"></a>2.5日期简介</h3><ul>
+<li><p>js内置Date对象 可以使用new操作符和Date() 构造函数来创建Date对象</p>
+</li>
+<li><p>Date对象用于表示日期和时间。</p>
+</li>
+<li><p>不带任何参数创建一个新的Date对象获得的是当前日期和Date对象</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="keyword">var</span> thisMoment = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">&gt;<span class="built_in">console</span>.log(thisMoment);</span><br><span class="line">Sun Jan <span class="number">30</span> <span class="number">2011</span> <span class="number">21</span>:<span class="number">36</span>:<span class="number">19</span> GMT-<span class="number">400</span> (AST)</span><br><span class="line"></span><br><span class="line">&gt;thisMoment.getFullYear()</span><br><span class="line"><span class="number">2021</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="2-6其他类型"><a href="#2-6其他类型" class="headerlink" title="2.6其他类型"></a>2.6其他类型</h3><ul>
+<li><p>声明一个变量未对其赋值或访问一个不存在的对象属性，结果都会产生一个undefined的类型</p>
+</li>
+<li><p>null是js的一个内置对象它表示没有值</p>
+</li>
+<li><p>执行比较操作时，null undefined都被转换为false值</p>
+</li>
+<li><p>最好避免使用undefined</p>
+</li>
+<li><p>在很多js解释器中 undefined是可以重新赋值的，因而产生存在弊端的代码</p>
+</li>
+<li><p>```JavaScript<br>undefined = true<br>if(undefined){<br>  console.log(‘tricked you!’);<br>}<br>//输出 tricked you!</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- js支持的各种数据类型</span><br><span class="line"></span><br><span class="line">  1. Number</span><br><span class="line">  2. String</span><br><span class="line">  3. Boolean</span><br><span class="line">  4. Object</span><br><span class="line">  5. Function</span><br><span class="line">  6. Array</span><br><span class="line">  7. Date</span><br><span class="line">  8. RegEx</span><br><span class="line">  9. Null</span><br><span class="line">  10. Undefined</span><br><span class="line"></span><br><span class="line">- 在使用try/catch 时，某些附加的内置error类型非常有用。通常在throw语句中创建error对象</span><br><span class="line"></span><br><span class="line">- ```javascript</span><br><span class="line">  try&#123;</span><br><span class="line">    throw new Error(&#x27;Something really bad happend&#x27;);</span><br><span class="line">  &#125;catch(e)&#123;</span><br><span class="line">    console.log(e.name + &quot;:&quot; + e.message)</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  //Error :something really bad happend</span><br></pre></td></tr></table></figure></li>
+<li><p>不同的error类型</p>
+<ol>
+<li>EvalError</li>
+<li>RangeError</li>
+<li>ReferenceError</li>
+<li>SyntaxError</li>
+<li>TypeError</li>
+<li>URIError</li>
+</ol>
+</li>
+</ul>
+<h3 id="2-7变量"><a href="#2-7变量" class="headerlink" title="2.7变量"></a>2.7变量</h3><ul>
+<li><p>可以通过赋值操作（隐式声明）or使用var关键字（显式声明）来声明变量。</p>
+</li>
+<li><p>如果用var关键字来声明变量。则该变量是持久的，且不能删除该变量。</p>
+</li>
+<li><p>对于一个变量可以进行多次声明，而不会产生任何错误</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">i = <span class="number">0</span>; <span class="comment">// 隐式声明</span></span><br><span class="line"><span class="keyword">var</span> i = <span class="number">0</span>; <span class="comment">//显式声明</span></span><br><span class="line"><span class="keyword">var</span> x; <span class="comment">//undefined</span></span><br></pre></td></tr></table></figure></li>
+<li><p>作用域(Scope)指的是变量或对象的可见范围</p>
+</li>
+<li><p>global全局变量在应用程序中任何地方可见</p>
+</li>
+<li><p>local局部变量仅在声明变量的函数内可见</p>
+</li>
+<li><p>隐式声明的变量总是具有全局作用域，即使该变量是在某个函数体内声明的</p>
+</li>
+<li><p>为避免问题，总是使用var关键字声明变量</p>
+</li>
+<li><p>若在函数内和海曙外声明了相同的变量，那么在函数题内局部变量将取代外部声明的变量</p>
+</li>
+</ul>
+<h3 id="2-8理解对象"><a href="#2-8理解对象" class="headerlink" title="2.8理解对象"></a>2.8理解对象</h3><ol>
+<li><p>对象是属性的集合，属性有key value</p>
+</li>
+<li><p>数组 函数 正则表达式都是对象</p>
+</li>
+<li><p>number string boolean 是不可变对象</p>
+</li>
+<li><p>创建对象 </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//new关键字</span></span><br><span class="line"><span class="keyword">var</span> myObject = <span class="keyword">new</span> <span class="built_in">Object</span>();</span><br><span class="line"><span class="comment">//构造函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Zombie</span>(<span class="params"> name </span>)</span>&#123;</span><br><span class="line">  <span class="built_in">this</span>.name = name;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> smallZombie = <span class="keyword">new</span> Zombie( <span class="string">&quot;Booger&quot;</span> );</span><br><span class="line"><span class="comment">//字面量</span></span><br><span class="line"><span class="keyword">var</span> myObject = &#123;&#125;;</span><br><span class="line"><span class="keyword">var</span> objectWithProperties = &#123;</span><br><span class="line">  <span class="string">&quot;property1&quot;</span>: <span class="string">&quot;a string value&quot;</span>,</span><br><span class="line">  <span class="string">&quot;myObjectAsproperty&quot;</span>:myObject</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">鼓励开发人员使用点操作符方式，因为属性也可以是对象，可以在任意层次上嵌套对象</span><br><span class="line"><span class="keyword">var</span> species = &#123;</span><br><span class="line">  <span class="string">&#x27;mammals&#x27;</span> :&#123;</span><br><span class="line">    <span class="string">&#x27;biped&#x27;</span>: &#123;</span><br><span class="line">      <span class="string">&#x27;monkey&#x27;</span> : <span class="string">&#x27;George&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;humen&#x27;</span> : <span class="string">&#x27;Tim&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(species.mamals.biped.human);</span><br></pre></td></tr></table></figure></li>
+<li><p>js是一种动态类语言，更新一个属性只需要重新赋值即可</p>
+</li>
+<li><p>要从对象中删除一个属性只需要使用delete操作符。删除一个并不存在的属性并不会造成任何危险</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  <span class="string">&#x27;property1&#x27;</span> :<span class="number">1</span>,</span><br><span class="line">  <span class="string">&#x27;property2&#x27;</span> :<span class="number">2</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> i;</span><br><span class="line"><span class="keyword">for</span>(i <span class="keyword">in</span> obj )&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(i)</span><br><span class="line">&#125;</span><br><span class="line">&gt;&gt;property1</span><br><span class="line">&gt;&gt;property2</span><br></pre></td></tr></table></figure></li>
+<li><p>js 使用原型继承(prototype inheritance) 对象直接从其他对象继承，从而创建新的对象</p>
+</li>
+<li><p>简而言之，对象继承了另外一个对象的属性</p>
+</li>
+<li><p>js中没有类</p>
+</li>
+<li><p>原型就是其他对象的模型</p>
+</li>
+<li><p> 原型继承相对于基于类/对象的继承更加简单。一个内置对象Object.prototype位于继承层次的顶端，所有其他对象都继承了该对象</p>
+</li>
+<li><p>继承树中的每一个对象，都可以通过prototype属性链接起来</p>
+</li>
+<li><p>获取属性是通过delegation实现的。</p>
+</li>
+<li><p>当试图获取一个并不存在的属性时，js将沿着原型树prototype tree向上查找直到查找到原始的Object.prototype</p>
+</li>
+<li><p>若没有找到则返回一个undefined</p>
+</li>
+<li><p>如果对象的某个属性是一个函数，则称该函数为方法。</p>
+</li>
+<li><p>可以通过将函数添加到原型对象创建方法，也可以直接将函数添加到对象</p>
+</li>
+<li><p>方法有参数this，绑定于作用域范围内，this是对调用该方法对象的一个引用</p>
+</li>
+<li><p>原型链继承实例</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Monster</span>(<span class="params"> type </span>)</span>&#123;</span><br><span class="line">  <span class="built_in">this</span>.type = type;</span><br><span class="line">&#125;</span><br><span class="line">Monster.prototype.getType = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">this</span>.type;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Zombie</span>(<span class="params"> name </span>)</span>&#123;</span><br><span class="line">  <span class="built_in">this</span>.name = name;</span><br><span class="line">&#125;</span><br><span class="line">Zombie.prototype = <span class="keyword">new</span> Monster();</span><br><span class="line">Zombie.prototype.eatPeople = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&#x27;tastes like chicken&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line">引用(reference) 是一个指向对象实例位置的指针。</span><br><span class="line">object是引用类型，对象都是通过引用传递的。</span><br><span class="line">修改绑定于一个原型的属性，将修改基于该原型的所有其他对象的原型</span><br><span class="line">&gt;smallZombie.eatPeople();</span><br><span class="line">Tastes like checken</span><br><span class="line">&gt;<span class="keyword">delete</span> Zombie.prototype.eatPeople;</span><br><span class="line"><span class="literal">true</span></span><br><span class="line">&gt;smallZombie.eatPeople();</span><br><span class="line"><span class="built_in">TypeError</span>:<span class="built_in">Object</span> #&lt;a Zombie&gt; has no method <span class="string">&#x27;eatPeople&#x27;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>创建对象注意</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj1 = obj2 = &#123;&#125;;</span><br><span class="line">obj1 obj2 引用的是同一个对象</span><br><span class="line"><span class="keyword">var</span> obj1 = &#123;&#125;;</span><br><span class="line">obj2 = &#123;&#125;</span><br><span class="line">引用的是不同的对象</span><br></pre></td></tr></table></figure></li>
+<li><p>用hasOwnProperty()方法检查某个属性是否存在</p>
+</li>
+<li><p>避免使用全局变量，有一些方法可以避免扰乱全局变量名称空间，一种办法是用单个全局变量作为顶层对象，包含程序或框架中的所有方法和属性。名称空间全部大写</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ZOMBIE_GENERATOR = &#123;&#125;;</span><br><span class="line">ZOMBIE_GENERATOR.Zombies = &#123;</span><br><span class="line">	smallZombie : &#x27;Booger&#x27;,</span><br><span class="line">	largeZombie : &#x27;Bruce&#x27;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="2-9使用函数"><a href="#2-9使用函数" class="headerlink" title="2.9使用函数"></a>2.9使用函数</h3><ol>
+<li><p>函数是一个代码块</p>
+</li>
+<li><p>没有返回值将返回undefined</p>
+</li>
+<li><p>js函数是第一类的对象，可以将函数赋予一个变量，或者保存在另一个数据结构中</p>
+</li>
+<li><p>js函数重要特性</p>
+<ol>
+<li>将函数作为参数传给其他函数</li>
+<li>匿名函数</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">repoter</span>(<span class="params"> fn </span>)</span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">&#x27;the return value of your function is &#x27;</span>+ fn() );</span><br><span class="line">&#125;</span><br><span class="line">reporter( <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125; );</span><br><span class="line">&gt;&gt;the <span class="keyword">return</span> value <span class="keyword">of</span> your <span class="function"><span class="keyword">function</span> <span class="title">is</span> <span class="title">undefined</span></span></span><br><span class="line"><span class="function"><span class="title">reporter</span>(<span class="params"> <span class="keyword">function</span>()&#123;</span></span></span><br><span class="line"><span class="params"><span class="function">  <span class="keyword">return</span> <span class="string">&#x27;a simple string&#x27;</span></span></span></span><br><span class="line"><span class="params"><span class="function">&#125;</span>)</span></span><br><span class="line"><span class="function">&gt;&gt;<span class="title">the</span> <span class="title">return</span> <span class="title">value</span> <span class="title">of</span> <span class="title">your</span> <span class="function"><span class="keyword">function</span> <span class="title">is</span> <span class="title">a</span> <span class="title">simple</span> <span class="title">string</span></span></span></span><br><span class="line"><span class="function"><span class="function"><span class="function"><span class="keyword">function</span> <span class="title">calc</span>(<span class="params"></span>)</span>&#123;</span></span></span><br><span class="line"><span class="function"><span class="function">  <span class="title">return</span> 4*2</span>;</span></span><br><span class="line"><span class="function">&#125;</span></span><br><span class="line"><span class="function"><span class="title">reporter</span>(<span class="params"> calc() </span>)</span>;</span><br><span class="line">&gt;&gt;the <span class="keyword">return</span> value <span class="keyword">of</span> your <span class="function"><span class="keyword">function</span> <span class="title">is</span> 8</span></span><br></pre></td></tr></table></figure>
+
+<p>关于匿名函数一个重要变体就是立即调用的函数表达式，或者称为自执行匿名函数</p>
+<p>立即调用的函数表达式 // 自执行匿名函数</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span> (<span class="params">x,y</span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log( x+y );</span><br><span class="line">&#125;)(<span class="number">5</span>,<span class="number">6</span>);</span><br><span class="line">&gt;&gt;<span class="number">11</span></span><br></pre></td></tr></table></figure>
+
+<p>由于这样的函数表达式被立即调用，因此该模式用于确保代码块的执行上下文按照预期的效果执行。</p>
+<p>通过参数传入函数，在执行时就可以捕获函数所创建闭包中的变量。</p>
+</li>
+<li><p>闭包是这样一个函数：处在函数体中，并引用了函数体当前执行上下文中的变量。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x = <span class="number">42</span>;</span><br><span class="line"><span class="built_in">console</span>.log(x);</span><br><span class="line"><span class="keyword">var</span> message = (<span class="function"><span class="keyword">function</span>(<span class="params">x</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="built_in">console</span>.log(<span class="string">&quot;x is &quot;</span> + x);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)(x);</span><br><span class="line">message();</span><br><span class="line">x = <span class="number">12</span>;</span><br><span class="line"><span class="built_in">console</span>.log(x);</span><br><span class="line">message();</span><br><span class="line">&gt;&gt;都是<span class="number">42</span></span><br></pre></td></tr></table></figure>
+
+<p>当我们把变量x的初始值作为参数传入函数时，可以在函数执行时所创建的闭包中捕获变量x的值。</p>
+<p>无论在外部作用域中x的值发生了什么变化，闭包将只记住函数执行时变量x的值。</p>
+</li>
+<li><p>闭包</p>
+<ul>
+<li>代码</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">a</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> i=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">b</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">alert(++i);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> b;</span><br><span class="line"></span><br><span class="line">&#125;<span class="keyword">var</span> c=a();</span><br><span class="line"></span><br><span class="line">c();</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>特点</p>
+<p>1、函数b嵌套在函数a内部；</p>
+<p>2、函数a返回函数b。</p>
+<p>这样在执行完var c=a( )后，变量c实际上是指向了函数b，再执行c( )后就会弹出一个窗口显示i的值（第一次为1）。这段代码其实就创建了一个闭包，这是因为函数a外的变量c引用了函数a内的函数b。也就是说，当函数a的内部函数b被函数a外的一个变量引用的时候，就创建了一个闭包。</p>
+</li>
+<li><p>作用</p>
+<p>简而言之，闭包的作用就是在a执行完并返回后，闭包使得Javascript的垃圾回收机制不会收回a所占用的资源，因为a的内部函数b的执行需要依赖a中的变量。</p>
+<p>在上面的例子中，由于闭包的存在使得函数a返回后，a中的i始终存在，这样每次执行c()，i都是自加1后alert出i的值。</p>
+<p>那 么我们来想象另一种情况，如果a返回的不是函数b，情况就完全不同了。因为a执行完后，b没有被返回给a的外界，只是被a所引用，而此时a也只会被b引 用，因此函数a和b互相引用但又不被外界打扰（被外界引用），函数a和b就会被回收。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="2-10执行理解上下文"><a href="#2-10执行理解上下文" class="headerlink" title="2.10执行理解上下文"></a>2.10执行理解上下文</h3><ul>
+<li><p>执行上下文是一种对象，代码在上下文环境中执行。</p>
+</li>
+<li><p>可以通过this关键字访问执行上下文，this关键字是对当前执行上下文对象的引用</p>
+</li>
+<li><p>没有定义具体上下文的函数，将它们this关键字的值绑定与undefined值</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="built_in">this</span>);</span><br><span class="line">&gt;&gt;[object DOMWindow]</span><br></pre></td></tr></table></figure></li>
+<li><p>当开始执行一个函数或方法时，js创建一个新的执行上下文并进入该函数的执行上下文。</p>
+</li>
+<li><p>当函数执行完毕并返回时，控制权交还给原来的执行上下文</p>
+</li>
+<li><p>创建闭包时当前上下文将继续保留下来，否则当前上下文将被视为垃圾收集。</p>
+</li>
+</ul>
+<h3 id="2-11作用域和闭包"><a href="#2-11作用域和闭包" class="headerlink" title="2.11作用域和闭包"></a>2.11作用域和闭包</h3><ol>
+<li><p>考虑作用域时，考虑 变量定义位置 和 变量生存期 非常重要</p>
+</li>
+<li><p>作用域指的是在什么地方可以访问该变量，</p>
+</li>
+<li><p>在js中作用域维持在函数级别，而非块级别。</p>
+</li>
+<li><p>除了不能访问this关键字和参数之外，嵌套函数可以访问外部函数中定义的变量。这一机制是通过闭包来实现的。</p>
+</li>
+<li><p>它指的是，即使在外部函数结束执行之后，内部嵌套的函数极限保持它对外部函数的引用。</p>
+</li>
+<li><p>闭包还有助于减少名称空间的冲突</p>
+</li>
+<li><p>每次调用一个包裹（enclosed）的函数时，虽然函数的代码并没有改变，但是js将为每一次调用创建一个新的作用域 ，下面的代码说明这一行为。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getFunction</span>(<span class="params">value</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params">value</span>)</span>&#123;</span><br><span class="line">		<span class="keyword">return</span> value;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> a = getFunction(),b = getFunction(),c = getFunction();</span><br><span class="line"><span class="built_in">console</span>.log(a(<span class="number">0</span>));</span><br><span class="line">&gt;&gt;<span class="number">0</span></span><br><span class="line"><span class="built_in">console</span>.log(b(<span class="number">1</span>));</span><br><span class="line">&gt;&gt;<span class="number">1</span></span><br><span class="line"><span class="built_in">console</span>.log(c(<span class="number">2</span>));</span><br><span class="line">&gt;&gt;<span class="number">2</span></span><br><span class="line"><span class="built_in">console</span>.log(a===b);</span><br><span class="line">&gt;&gt;<span class="literal">false</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">get</span>(<span class="params">value</span>) </span>&#123;</span><br><span class="line"><span class="comment">// return function(value) &#123;</span></span><br><span class="line"><span class="comment">//     return value;</span></span><br><span class="line"><span class="comment">// &#125;</span></span><br><span class="line">	<span class="keyword">return</span> value;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> a = get(),</span><br><span class="line">b = get();</span><br><span class="line"><span class="built_in">console</span>.log(a === b)</span><br><span class="line">&gt;&gt;<span class="literal">true</span></span><br></pre></td></tr></table></figure></li>
+<li><p>当定义一个独立函数（不绑定任何对象）时，this关键字就会绑定于全局名称空间。</p>
+</li>
+<li><p>作为一个最直接的结果，当在一个方法内创建一个内部函数时，内部函数的this关键字将绑定于全局名称空间，而不是绑定于该方法。</p>
+</li>
+<li><p>为解决这一问题，可以将包裹方法的this关键字简单地赋值给一个名为that的变量</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">obj = &#123;&#125;;</span><br><span class="line">obj.method = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> that = <span class="built_in">this</span>;</span><br><span class="line">  <span class="built_in">this</span>.conter = <span class="number">0</span>;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">var</span> count = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    that.counter +=<span class="number">1</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(that.counter);</span><br><span class="line">  &#125;</span><br><span class="line">  count();</span><br><span class="line">  count();</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">this</span>.counter);</span><br><span class="line">&#125;</span><br><span class="line">obj.method();</span><br><span class="line">&gt;&gt;<span class="number">1</span></span><br><span class="line">&gt;&gt;<span class="number">2</span></span><br><span class="line">&gt;&gt;<span class="number">2</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="2-12理解访问级别"><a href="#2-12理解访问级别" class="headerlink" title="2.12理解访问级别"></a>2.12理解访问级别</h3><ol>
+<li><p>在js中并没有官方访问级别语法，js没有类似于java中的private/protected这样的访问级别关键字，对象中所有成员都是共有和可访问的。</p>
+</li>
+<li><p>但在js中可以实现与私有或专属属性类似的访问级别效果。</p>
+</li>
+<li><p><strong>要实现私有方法或属性类似的访问效果</strong>，<strong>请使用闭包</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">TimeMachine</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="comment">//私有成员</span></span><br><span class="line">  <span class="keyword">var</span> destination = <span class="string">&#x27;October 5,1955&#x27;</span>;</span><br><span class="line">  <span class="comment">//公有成员</span></span><br><span class="line">  <span class="built_in">this</span>.getDestination = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> destination;</span><br><span class="line">  &#125;；</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> delorean = <span class="keyword">new</span> TimeMachine();</span><br><span class="line"><span class="built_in">console</span>.log(delorean.getDestination());</span><br><span class="line">&gt;&gt;October <span class="number">5</span>,<span class="number">1955</span></span><br><span class="line">&gt;<span class="built_in">console</span>.log(deloreon.destination);</span><br><span class="line"><span class="comment">//undefined</span></span><br></pre></td></tr></table></figure>
+
+<p>getDestination方法是一个专有方法，它可以访问TimeMachine中的私有成员，变量destination是私有的，它的值只能通过专有方法get Destination进行访问</p>
+</li>
+</ol>
+<h3 id="2-13使用模块"><a href="#2-13使用模块" class="headerlink" title="2.13使用模块"></a>2.13使用模块</h3><ul>
+<li><p>js没有内置的包语法，模块模式。</p>
+</li>
+<li><p>模块模式是一种简单而流行的方式，用于创建自包含的、模块化的代码块</p>
+</li>
+<li><p>要创建一个模块，只需要声明一个名称空间、将有关函数绑定于该命名空间，并定义私有成员和专有成员即可，下面将使用模块重写TimeMachine对象</p>
+</li>
+<li><p>```javascript<br>TIMEMACHINE = {};<br>TIMEMACHINE.createDeloean = (function(){<br>  //私有成员<br>  var destination = ‘’;<br>  var model = ‘’;<br>  var fuel = ‘’;<br>  //公有访问方法<br>  return {</p>
+<pre><code>//设置器
+setDestination:function(dest)&#123;
+  this.destination = dest;
+&#125;,
+setModel:function(model)&#123;
+  this.model = model;
+&#125;,
+setFuel:function(fuel)&#123;
+  this.fuel = fuel;
+&#125;,
+//访问器
+getDestination:function()&#123;
+  return this.destination;
+&#125;,
+getModel:function()&#123;
+  return this.model;
+&#125;,
+getFuel:function()&#123;
+  return this.fuel;
+&#125;,
+//其他成员
+toString:function()&#123;
+  console.log(this.getModel()+&#39;- Fuel Type: &#39; + this.getFuel() + &#39;-Headed:&#39; + this.getDestination());
+&#125;
+</code></pre>
+<p>  //在这里初始化执行过程<br>  }<br>};());<br>var myTimeMachine = TIMEMACHINE.createDelorean;<br>myTimeMachine.setModel(‘1985 Delorean’);<br>myTimeMachine.setFule(‘plutonium’);<br>myTimeMachine.setDestination(‘October 5,1955’);<br>myTimeMachine.toString();<br>1985 Delorean - Fuel Type: plutonium - Headed: October 5, 1955</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 2.14js数组</span><br><span class="line"></span><br><span class="line">1. ```javascript</span><br><span class="line">   var array1 = new Array()</span><br><span class="line">   array1[0] =1;</span><br><span class="line">   array1[1] = &#x27;a string&#x27;</span><br><span class="line">   </span><br><span class="line">   var niceArray = [1,2,3];</span><br><span class="line">   在数组字面量中混合使用对象字面量，它是js对象表示法 json(javascript object notation)的基础</span><br><span class="line">   json是一种流行的数据交换格式，它可用于多种语言而不仅仅是js语言</span><br><span class="line">   var myDate = &#123;</span><br><span class="line">     &#x27;root&#x27; :&#123;</span><br><span class="line">       &#x27;number&#x27; :[1,2,3],</span><br><span class="line">       &#x27;letters&#x27; :[&#x27;a&#x27;,&#x27;b&#x27;]</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="2-15扩展类型"><a href="#2-15扩展类型" class="headerlink" title="2.15扩展类型"></a>2.15扩展类型</h3><ul>
+<li><p>​    js支持将方法和其他属性绑定到内置类型，如字符串、数值和数组类型</p>
+</li>
+<li><p>与其他任何方法类似，string也有prototype属性</p>
+</li>
+<li><p>开发人员可以对String对象扩充一些便利的方法</p>
+</li>
+<li><p>如Stirng没有将字符串false或true转换为布尔值的方法</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">String</span>.prototype.boolean = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">&quot;true&quot;</span> == <span class="built_in">this</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> t = <span class="string">&#x27;true&#x27;</span>.boolean();</span><br><span class="line"><span class="keyword">var</span> f = <span class="string">&#x27;false&#x27;</span>.boolean();</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(t);</span><br><span class="line"><span class="built_in">console</span>.log(f);</span><br><span class="line"></span><br><span class="line">&gt;&gt;<span class="literal">true</span></span><br><span class="line">&gt;&gt;<span class="literal">false</span></span><br></pre></td></tr></table></figure></li>
+<li><p>每次输入prototype有点累赘 </p>
+</li>
+<li><p>Douglas Crockford提供了一段简洁代码 ，它使用一个名为method的方法扩充了Function.prototype,下面为该方法代码</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Function</span>.prototype.method = <span class="function"><span class="keyword">function</span>(<span class="params">name,func</span>)</span>&#123;</span><br><span class="line">  <span class="built_in">this</span>.prototype[name] = func;</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">this</span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
+<li><p>接下来重写String类的boolean方法:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">String</span>.method(<span class="string">&#x27;boolean&#x27;</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">&quot;true&quot;</span> == <span class="built_in">this</span>;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;true&#x27;</span>.boolean();</span><br><span class="line">&gt;&gt;<span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>对于编写工具方法库并将其包含在项目中，这一技术非常有用</p>
+</li>
+</ul>
+<h3 id="2-16js最佳实践"><a href="#2-16js最佳实践" class="headerlink" title="2.16js最佳实践"></a>2.16js最佳实践</h3><p><strong>避免事项</strong></p>
+<ol>
+<li><p>使用parseInt()函数将字符串转换为整数，请确保总是指定基数。更好方法是使用一元操作符号+将字符串转换为数值</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">good: parseInt(&#x27;010&#x27;,10);//转换为十进制而不是八进制</span><br><span class="line">Bettor: +&quot;010&quot; //简单高效</span><br></pre></td></tr></table></figure></li>
+<li><p>使用===操作符比较两个值 避免意料之外的类型转换</p>
+</li>
+<li><p>在定义对象字面量时，在最后一个值不要使用逗号</p>
+</li>
+<li><p>eval()函数可以接受一个字符串，并将其视为js代码执行。应限制eval()函数的使用，它很容易在代码中引入个样严重的安全问题</p>
+</li>
+<li><p>使用分号进行代码结尾，当精简代码时这特别有用</p>
+</li>
+<li><p>应该避免使用全局变量。应该总是使用var关键字来声明变量。将代码包裹在匿名函数中，以避免明明冲突，请使用模块来组织代码</p>
+</li>
+<li><p>对函数名使用首字母大写来表示该函数将作为new操作符的构造函数，但请不要对其他任何函数的函数名使用首字母大写</p>
+</li>
+<li><p>不要使用with语句</p>
+</li>
+<li><p>在循环中创建函数应该谨慎小心，这种方式非常低效</p>
+</li>
+</ol>
+<h3 id="2-17综合示例"><a href="#2-17综合示例" class="headerlink" title="2.17综合示例"></a>2.17综合示例</h3><p>jq示例</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">&#x27;#submit_button_id&#x27;</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  $.ajax(&#123;</span><br><span class="line">    <span class="string">&#x27;url&#x27;</span>:<span class="string">&#x27;/place2post.php&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;type&#x27;</span>:<span class="string">&#x27;post&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;success&#x27;</span>:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">      <span class="comment">//代码放在这里</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>使用一个对象字面量来传递一个参数列表、匿名函数、$作为有效标识符</p>
+<p>jq使用了闭包来隐藏数据</p>
+<h3 id="2-18小结"><a href="#2-18小结" class="headerlink" title="2.18小结"></a>2.18小结</h3><p>介绍了js作为动态语言的特性</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/05/09/jquery%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B/" data-id="ckomi7m4r0009o65160aohwau" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2021/05/10/Javascript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/05/13/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2021/05/12/README/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2021/05/10/%E5%AD%A6%E4%B9%A0%E3%80%81%E6%8F%92%E4%BB%B6%E7%BD%91%E5%9D%80/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2021/05/10/leetcode%E5%88%B7%E9%A2%98/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2021/05/10/%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
